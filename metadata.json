@@ -1,0 +1,6 @@
+{
+  "name": "Portal de Onboarding Reque SST",
+  "description": "Portal de Boas-Vindas e Onboarding do Cliente para parametrização, carga de colaboradores e outorga de procuração eSocial.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
