@@ -622,11 +622,11 @@ export default function App() {
             <span className="text-[10px] text-[#1A2D69] font-semibold mt-1 self-start truncate max-w-[280px]" title={
               !step1Complete ? "Fase 1: Acesso ao Portal do Cliente e Apresentação" :
               step1Complete && !step2Complete ? "Fase 2: Preenchimento do Modelo 1 (Dados da Empresa)" :
-              step1Complete && step2Complete && !step3Complete ? "Fase 3: Emissão da Procuração Eletrônica (e-CAC)" : "✓ Integração Concluída!"
+              step1Complete && step2Complete && !step3Complete ? "Fase 3: Autorização de acesso - Procuração" : "✓ Integração Concluída!"
             }>
               {!step1Complete && "• Fase 1: Acesso ao Portal e Apresentação"}
               {step1Complete && !step2Complete && "• Fase 2: Preenchimento do Modelo 1"}
-              {step1Complete && step2Complete && !step3Complete && "• Fase 3: Emissão da Procuração e-CAC"}
+              {step1Complete && step2Complete && !step3Complete && "• Fase 3: Autorização de acesso - Procuração"}
               {step1Complete && step2Complete && step3Complete && "✓ Integração Concluída!"}
             </span>
           </div>
@@ -835,7 +835,7 @@ export default function App() {
               <div className="lg:col-span-5 flex flex-col justify-between h-full gap-6">
                 <div className="flex flex-col gap-4">
                   <p className="text-sm text-slate-600 leading-relaxed">
-                    Neste vídeo rápido, a nossa equipe de Relacionamento dá as boas-vindas e explica os primeiros passos da sua gestão: a importância do preenchimento correto do Modelo 1 (Dados da Empresa) e como emitir a Procuração Eletrônica (e-CAC) para os envios de SST ao eSocial. Assista antes de prosseguir com os envios.
+                    Neste vídeo rápido, a Coordenadora de Relacionamento dá as boas-vindas e explica os primeiros passos da sua gestão: a importância de preencher corretamente o Modelo 1 (Dados da Empresa) e como realizar a Autorização de acesso - Procuração para os envios de SST ao eSocial. Assista antes de prosseguir com os envios.
                   </p>
 
                   <div className="bg-[#f0f4fd] p-4 rounded-xl flex flex-col gap-2 border border-blue-100">
@@ -845,15 +845,15 @@ export default function App() {
                     <ul className="space-y-2 text-slate-600 text-xs">
                       <li className="flex items-center gap-2">
                         <span className="material-symbols-outlined text-emerald-600 text-[18px]">done</span>
-                        Fluxo de agendamento de ASOs Clínicos e Complementares.
+                        Equipe de relacionamento acompanhando e orientando o onboarding.
                       </li>
                       <li className="flex items-center gap-2">
                         <span className="material-symbols-outlined text-emerald-600 text-[18px]">done</span>
-                        Prazos legais para envio dos eventos de SST ao eSocial.
+                        Importância do preenchimento correto do Modelo 1.
                       </li>
                       <li className="flex items-center gap-2">
                         <span className="material-symbols-outlined text-emerald-600 text-[18px]">done</span>
-                        Atendimento direto via WhatsApp e Central do Cliente.
+                        Cadastro da procuração para eventos e-Social.
                       </li>
                     </ul>
                   </div>
@@ -1087,7 +1087,7 @@ export default function App() {
             </div>
           </section>
 
-          {/* STEP 3: PROCURACAO FEDERAL / e-CAC */}
+          {/* STEP 3: PROCURACAO FEDERAL / RECEITA FEDERAL */}
           <section className="bg-white rounded-2xl shadow-sm border border-slate-200/70 p-6 sm:p-8 flex flex-col gap-6">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
               <div className="flex items-center gap-3">
@@ -1104,7 +1104,7 @@ export default function App() {
                     </span>
                   </div>
                   <h2 className="text-lg sm:text-xl font-bold text-slate-900 mt-1">
-                    3. Passo a Passo: Outorga da Procuração Eletrônica Digital (e-CAC / eSocial)
+                    3. Passo a Passo: Outorga da Autorização de acesso - Procuração (Receita Federal / eSocial)
                   </h2>
                 </div>
               </div>
@@ -1130,7 +1130,7 @@ export default function App() {
                   
                   <div className="absolute top-3 left-3">
                     <span className="px-2.5 py-1 rounded bg-black/60 backdrop-blur-md text-white text-[10px] uppercase font-semibold">
-                      Tutorial Oficial e-CAC
+                      Tutorial Receita Federal
                     </span>
                   </div>
 
@@ -1145,7 +1145,7 @@ export default function App() {
                   </button>
 
                   <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white/90 text-[11px]">
-                    <span>Como conceder procuração eletrônica</span>
+                    <span>Como conceder Autorização de acesso - Procuração</span>
                     <span className="font-mono bg-black/50 px-2 py-0.5 rounded">02:50</span>
                   </div>
                 </div>
@@ -1184,20 +1184,20 @@ export default function App() {
               {/* INSTRUCTION STEPS RIGHT COLUMN */}
               <div className="lg:col-span-7 flex flex-col gap-5">
                 <p className="text-sm text-slate-600 leading-relaxed">
-                  Para que a Reque SST possa transmitir os eventos de Saúde e Segurança do Trabalho (<strong>S-2210</strong> de Acidente de Trabalho, <strong>S-2220</strong> de Monitoramento da Saúde e <strong>S-2240</strong> de Condições Ambientais) diretamente ao eSocial da sua empresa sem ônus ou burocracia, é necessário conceder a procuração eletrônica no portal da Receita Federal.
+                  Para que a Reque SST possa transmitir os eventos de Saúde e Segurança do Trabalho (<strong>S-2210</strong> de Acidente de Trabalho, <strong>S-2220</strong> de Monitoramento da Saúde e <strong>S-2240</strong> de Condições Ambientais) diretamente ao eSocial da sua empresa sem ônus ou burocracia, é necessário conceder a Autorização de acesso - Procuração no portal da Receita Federal.
                 </p>
 
                 <ol className="space-y-3 font-sans text-xs">
                   <li className="p-3.5 rounded-xl bg-[#f0f4fd] border border-blue-100 flex items-start gap-3">
                     <span className="w-6 h-6 rounded-full bg-[#059669] text-white flex items-center justify-center font-bold text-xs flex-shrink-0 mt-0.5">1</span>
                     <span className="text-slate-800 leading-normal">
-                      Acesse o portal e-CAC da Receita Federal utilizando o Certificado Digital da empresa (e-CNPJ ou login Gov.br Prata/Ouro do responsável).
+                      Acesse o Portal de Serviços da Receita Federal utilizando o Certificado Digital da empresa (e-CNPJ ou login Gov.br Prata/Ouro do responsável).
                     </span>
                   </li>
                   <li className="p-3.5 rounded-xl bg-[#f0f4fd] border border-blue-100 flex items-start gap-3">
                     <span className="w-6 h-6 rounded-full bg-[#059669] text-white flex items-center justify-center font-bold text-xs flex-shrink-0 mt-0.5">2</span>
                     <span className="text-slate-800 leading-normal">
-                      Selecione o menu <strong>&quot;Senhas e Procurações&quot;</strong> &gt; <strong>&quot;Cadastro, Consulta e Cancelamento - Procuração para o e-CAC&quot;</strong>.
+                      Selecione o menu <strong>&quot;Senhas e Procurações&quot;</strong> &gt; <strong>&quot;Cadastro, Consulta e Cancelamento - Autorização de acesso - Procuração&quot;</strong>.
                     </span>
                   </li>
                   <li className="p-3.5 rounded-xl bg-[#f0f4fd] border border-blue-100 flex items-start gap-3">
@@ -1222,13 +1222,13 @@ export default function App() {
 
                 <div className="pt-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
                   
-                  {/* Quadro 1: Acessar Portal e-CAC da Receita Federal */}
+                  {/* Quadro 1: Acessar Portal da Receita Federal */}
                   <div className="p-4 rounded-xl bg-blue-50/70 border border-blue-200/90 flex flex-col justify-between gap-3">
                     <div className="flex items-center justify-between gap-2">
                       <div className="flex items-center gap-2 text-[#1A2D69]">
                         <span className="material-symbols-outlined text-[20px] text-[#1A2D69]">open_in_new</span>
                         <span className="text-xs font-bold uppercase tracking-wide">
-                          1. Acessar Portal e-CAC
+                          1. Acessar Portal Receita Federal
                         </span>
                       </div>
                       <span className="px-2 py-0.5 rounded-full bg-blue-100 text-[#1A2D69] text-[10px] font-bold uppercase shrink-0">
@@ -1237,17 +1237,17 @@ export default function App() {
                     </div>
 
                     <p className="text-[11px] text-slate-600 leading-relaxed">
-                      Acesse o portal e-CAC com o Certificado Digital da empresa para cadastrar a procuração eletrônica à Reque SST.
+                      Acesse o Portal de Serviços da Receita Federal com o Certificado Digital da empresa para cadastrar a Autorização de acesso - Procuração à Reque SST.
                     </p>
 
                     <div className="relative w-full">
                       <a 
                         className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-[#1A2D69] hover:bg-[#162557] text-white text-xs font-bold transition-all shadow-xs text-center cursor-pointer" 
-                        href="https://cav.receita.fazenda.gov.br/" 
+                        href="https://servicos.receitafederal.gov.br/lista-grupo?categoria=20" 
                         rel="noopener noreferrer" 
                         target="_blank"
                       >
-                        <span>Acessar Portal e-CAC Receita</span>
+                        <span>Acessar Portal da Receita Federal</span>
                         <span className="material-symbols-outlined text-[18px]">open_in_new</span>
                       </a>
                     </div>
@@ -1270,7 +1270,7 @@ export default function App() {
                     </div>
 
                     <p className="text-[11px] text-slate-600 leading-relaxed">
-                      Anexe o comprovante ou recibo em PDF/Imagem gerado pelo e-CAC para validação da procuração eSocial.
+                      Anexe o comprovante ou recibo em PDF/Imagem gerado pela Receita Federal para validação da Autorização de acesso - Procuração eSocial.
                     </p>
 
                     <div className="relative w-full">
@@ -1290,7 +1290,7 @@ export default function App() {
                           disabled={isUploadingProcuracao}
                         >
                           <span className="material-symbols-outlined text-[18px]">file_upload</span>
-                          <span>{isUploadingProcuracao ? 'Processando Arquivo...' : 'Anexar Comprovante e-CAC (.pdf)'}</span>
+                          <span>{isUploadingProcuracao ? 'Processando Arquivo...' : 'Anexar Comprovante (.pdf)'}</span>
                         </button>
                       ) : (
                         <div className="flex items-center justify-between p-2 rounded-lg bg-white border border-emerald-300 text-xs">
@@ -1443,8 +1443,8 @@ export default function App() {
                   </a>
                 </li>
                 <li>
-                  <a href="https://cav.receita.fazenda.gov.br/" target="_blank" rel="noopener noreferrer" className="text-slate-600 hover:text-[#1A2D69] transition-colors block">
-                    Conectar e-CAC Receita
+                  <a href="https://servicos.receitafederal.gov.br/lista-grupo?categoria=20" target="_blank" rel="noopener noreferrer" className="text-slate-600 hover:text-[#1A2D69] transition-colors block">
+                    Conectar Receita Federal
                   </a>
                 </li>
                 <li>
